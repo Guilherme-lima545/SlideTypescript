@@ -5,7 +5,7 @@ export default class Timeout {
     timeLeft;
     constructor(handler:TimerHandler, time: number) {
         this.id = setTimeout(handler, time);
-        this.handler = this.handler
+        this.handler = handler
         this.start = Date.now()
         this.timeLeft = time;
     }
